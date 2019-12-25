@@ -3,6 +3,7 @@
 {
   environment.systemPackages = with pkgs; [
     rxvt_unicode
+    (import ./vim.nix)
   ];
 
   services.urxvtd.enable = true;
@@ -22,8 +23,6 @@
         plugins = ["git" "pass" "taskwarrior"];
       }
       interactiveShellInit = ''
-        export EDITOR=nvim
-
         export ZSH=${pkgs.oh-my-zsh}/share/oh-my-zsh/
 
         if [ -f ~/.aliases ]; then
