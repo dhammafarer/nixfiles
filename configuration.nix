@@ -8,7 +8,8 @@
             ./users.nix
             ./xserver.nix
             ./xmonad.nix
-            ./audio.nix
             ./fonts.nix
+            ./terminal.nix
+            ./audio.nix
         ];
 }
