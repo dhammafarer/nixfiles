@@ -26,6 +26,7 @@
 
     displayManager.sessionCommands = with pkgs; lib.mkAfter
         ''
+        xrdb ~/dotfiles/.Xresources &
         xmodmap /home/pawel/dotfiles/.Xmodmap &
         stalonetray -c /home/pawel/.xmonad/stalonetrayrc-single &
         '';
