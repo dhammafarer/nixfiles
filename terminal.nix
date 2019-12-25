@@ -3,6 +3,7 @@
 {
   environment.systemPackages = with pkgs; [
     rxvt_unicode
+    urxvt_perls
     (import ./vim.nix)
   ];
 
