@@ -4,6 +4,7 @@
     imports =
         [
             ./hardware-configuration.nix
+            ./base.nix
             ./users.nix
             ./xserver.nix
             ./xmonad.nix
