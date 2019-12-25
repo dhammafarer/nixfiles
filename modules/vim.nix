@@ -219,7 +219,7 @@ vim_configurable.customize {
         { names = [
           "vim-airline"
           "vim-sensible"
-          "tpope/vim-surround"
+          "vim-surround"
           "nerdtree"
           "vim-easymotion"
           "vim-multiple-cursors"
@@ -229,7 +229,7 @@ vim_configurable.customize {
           "vim-gitgutter"
           "vimwiki"
           "ale"
-          "rename"
+          #"rename"
           "fzf-vim"
           "supertab"
           "youcompleteme"

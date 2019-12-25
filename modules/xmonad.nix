@@ -8,7 +8,7 @@
     haskellPackages.xmonad-contrib
     haskellPackages.xmobar
     stalonetray
-    xorg.modmap
+    xorg.xmodmap
   ];
 
   services.xserver = {
@@ -30,5 +30,5 @@
         xmodmap /home/pawel/dotfiles/.Xmodmap &
         stalonetray -c /home/pawel/.xmonad/stalonetrayrc-single &
         '';
-  }
+  };
 }

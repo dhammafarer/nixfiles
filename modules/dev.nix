@@ -6,7 +6,6 @@
     git-lfs
     neovim
     nodejs
-    npm
   ];
 
 }

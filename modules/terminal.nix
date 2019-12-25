@@ -22,7 +22,7 @@
         enable = true;
         theme = "avit";
         plugins = ["git" "pass" "taskwarrior"];
-      }
+      };
       interactiveShellInit = ''
         export ZSH=${pkgs.oh-my-zsh}/share/oh-my-zsh/
 
