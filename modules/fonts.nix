@@ -7,6 +7,7 @@
     fonts = with pkgs; [
       ubuntu_font_family
       fira-code
+      fira-code-symbols
       dejavu_fonts
       font-awesome-ttf
       powerline-fonts

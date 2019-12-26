@@ -2,12 +2,17 @@
 
 {
   environment.systemPackages = with pkgs; [
-    rxvt_unicode
-    urxvt_perls
+    rxvt_unicode-with-plugins
     (import ./vim.nix)
   ];
 
   services.urxvtd.enable = true;
+
+  environment = {
+      variables = {
+        URXVT_PERL_PLUGINS = "${pkgs.rxvt_unicode-with-plugins}/lib/urxvt/perl";
+      };
+    };
 
   programs = {
     bash = {
@@ -25,6 +30,8 @@
       };
       interactiveShellInit = ''
         export ZSH=${pkgs.oh-my-zsh}/share/oh-my-zsh/
+
+        export PATH=":/home/pawel/.npm-global/bin:$PATH"
 
         if [ -f ~/.aliases ]; then
           source ~/.aliases

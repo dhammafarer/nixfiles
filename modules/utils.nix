@@ -15,6 +15,7 @@
     mate.eom
     mupdf
     pass
+    pciutils
     ranger
     scrot
     taskwarrior

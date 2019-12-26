@@ -2,11 +2,6 @@
 
 {
   environment.systemPackages = with pkgs; [
+    blender
   ];
-
-  networking = {
-    networkmanager = {
-      enable = true;
-    };
-  };
 }
