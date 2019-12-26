@@ -61,7 +61,7 @@
             !! Extensions
             URxvt.perl-lib:              ${pkgs.rxvt_unicode-with-plugins}/lib/urxvt/perl
             URxvt.perl-ext-common:       default,keyboard-select,url-select,clipboard
-            URxvt.url-select.launcher:   /usr/bin/xdg-open
+            URxvt.url-select.launcher:   ${pkgs.google-chrome}/bin/google-chrome-stable
             URxvt.url-select.underline:  true
 
             !! Keymaps

@@ -31,6 +31,12 @@
       interactiveShellInit = ''
         export ZSH=${pkgs.oh-my-zsh}/share/oh-my-zsh/
 
+        export GTK_IM_MODULE=ibus
+        export XMODIFIERS=@im=ibus
+        export QT_IM_MODULE=ibus
+
+        export EDITOR=vim
+
         export PATH=":/home/pawel/.npm-global/bin:$PATH"
 
         if [ -f ~/.aliases ]; then
